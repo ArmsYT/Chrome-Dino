@@ -1,28 +1,29 @@
 /* Copyright 2013 The Chromium Authors. All rights reserved.
  * Use of this source code is governed by a BSD-style license that can be
  * found in the LICENSE file. */
- @font-face {
+@font-face {
   font-family: nfs;
   src: url(fonts/nfs.ttf);
   font-weight: normal;
-  font-style: normal; 
+  font-style: normal;
 }
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100%;
   background-color: #0e0e0e;
 }
-.soonbyte {
 
+.soonbyte {
   font-family: nfs;
-     color: rgb(235, 47, 235);
-     font-size: 24px;
-     margin-left: 8cm;
-     text-shadow: 0px 0px 10px #cf2df0;
- }
+  color: rgb(47, 235, 82);
+  font-size: 24px;
+  margin-left: 8cm;
+  text-shadow: 0px 0px 10px #2df03a;
+}
 
 .icon {
   -webkit-user-select: none;
@@ -31,7 +32,7 @@ html, body {
 }
 
 .icon-offline {
-  content: -webkit-image-set( url(assets/default_100_percent/100-error-offline.png) 1x, url(assets/default_200_percent/200-error-offline.png) 2x);
+  content: -webkit-image-set(url(assets/default_100_percent/100-error-offline.png) 1x, url(assets/default_200_percent/200-error-offline.png) 2x);
   position: relative;
 }
 
@@ -86,9 +87,12 @@ html, body {
 }
 
 @media (max-width: 600px) {
-  .suggested-left > #control-buttons, .suggested-right > #control-buttons {
+
+  .suggested-left>#control-buttons,
+  .suggested-right>#control-buttons {
     float: none;
   }
+
   .snackbar {
     left: 0;
     bottom: 0;
@@ -101,12 +105,15 @@ html, body {
   h1 {
     margin: 0 0 15px;
   }
+
   .icon-offline {
     margin: 0 0 10px;
   }
+
   .interstitial-wrapper {
     margin-top: 5%;
   }
+
   .nav-wrapper {
     margin-top: 30px;
   }
@@ -129,6 +136,7 @@ html, body {
   .offline .interstitial-wrapper {
     margin-bottom: 90px;
   }
+
   .icon-offline {
     margin-bottom: 20px;
   }
@@ -138,6 +146,7 @@ html, body {
   .icon-offline {
     margin-bottom: 0;
   }
+
   .offline .runner-container {
     top: 10px;
   }
@@ -148,4 +157,12 @@ html, body {
     overflow: inherit;
     padding: 0 8px;
   }
+}
+
+.github {
+  font-size: 3rem;
+  text-decoration: none;
+  color: white;
+  margin: 5px auto;
+  padding: auto 5px;
 }
